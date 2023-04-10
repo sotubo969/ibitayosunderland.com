@@ -1,0 +1,61 @@
+header{
+    box-sizing: border-box;
+    font-size: 53px;
+    text-align: center;
+    padding: 70px;
+    border: 1px;
+    margin: -7px;
+    background-color: brown;
+    color: white;
+}
+ul.a {
+    list-style-type: none;
+    margin: -7px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+li.a{
+    list-style-type: none;
+    display: block;
+    font-size: 20px;
+    padding: 16px;
+    margin-left: 190px;
+    float: left;
+}  
+li{
+    list-style-type: circle;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+    text-decoration: none;
+  } 
+
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: grey;
+    text-decoration: dotted;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+.hello{
+    background-color: cadetblue;
+    float: left;
+    max-height: max-content;
+    margin-top: 6px;
+    margin-left: -7px;
+}
+.hair{
+    text-align: center;
+}
