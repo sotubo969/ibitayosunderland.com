@@ -1,61 +1,83 @@
-header{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+header {
     font-size: 53px;
     text-align: center;
-    padding: 70px;
-    border: 1px;
-    margin: -7px;
+    padding: 20px;
     background-color: brown;
     color: white;
 }
-ul.a {
+
+nav ul {
     list-style-type: none;
-    margin: -7px;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #333333;
-  }
-  
-li.a{
-    list-style-type: none;
-    display: block;
-    font-size: 20px;
-    padding: 16px;
-    margin-left: 190px;
-    float: left;
-}  
-li{
-    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
 }
 
-/* unvisited link */
-a:link {
-    color: red;
-    text-decoration: none;
-  } 
+nav ul li {
+    padding: 16px;
+}
 
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-  
-  /* mouse over link */
-  a:hover {
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
     color: grey;
     text-decoration: dotted;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
-.hello{
-    background-color: cadetblue;
-    float: left;
-    max-height: max-content;
-    margin-top: 6px;
-    margin-left: -7px;
 }
-.hair{
+
+section.hello {
+    background-color: cadetblue;
+    padding: 20px;
     text-align: center;
+}
+
+section#sunderland-languages {
+    padding: 20px;
+}
+
+section#sunderland-languages h2, section#sunderland-languages h3 {
+    color: brown;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    header {
+        font-size: 32px;
+        padding: 15px;
+    }
+    
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 28px;
+        padding: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
 }
