@@ -1,83 +1,154 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header {
-    font-size: 53px;
-    text-align: center;
+h1, h2, h3 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    background-color: brown;
-    color: white;
 }
 
-nav ul {
-    list-style-type: none;
+/* Header */
+header {
+    background-color: #8b0000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 36px;
     margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav ul.menu {
+    list-style: none;
     padding: 0;
-    background-color: #333;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
-    padding: 16px;
+nav ul.menu li {
+    margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+nav ul.menu li a {
+    color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
-    color: grey;
-    text-decoration: dotted;
+nav ul.menu li a:hover {
+    background-color: #d2691e;
+    border-radius: 5px;
 }
 
-section.hello {
-    background-color: cadetblue;
-    padding: 20px;
-    text-align: center;
-}
-
+/* Main Content */
 section#sunderland-languages {
-    padding: 20px;
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-section#sunderland-languages h2, section#sunderland-languages h3 {
-    color: brown;
+section#sunderland-languages h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
+section#sunderland-languages h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    header h1 {
+        font-size: 28px;
     }
-    
-    header {
-        font-size: 32px;
-        padding: 15px;
+
+    nav ul.menu li {
+        margin: 0 10px;
     }
-    
-    nav ul li {
-        text-align: center;
-        margin: 0;
+
+    nav ul.menu li a {
+        font-size: 16px;
     }
-    
-    nav ul li a {
-        font-size: 18px;
+
+    section#sunderland-languages h2 {
+        font-size: 24px;
+    }
+
+    section#sunderland-languages h3 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
-    header {
-        font-size: 28px;
-        padding: 10px;
+    header h1 {
+        font-size: 24px;
     }
-    
-    nav ul li a {
-        font-size: 16px;
+
+    nav ul.menu li {
+        margin: 0 5px;
+    }
+
+    nav ul.menu li a {
+        font-size: 14px;
+    }
+
+    section#sunderland-languages h2 {
+        font-size: 20px;
+    }
+
+    section#sunderland-languages h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 95%;
     }
 }
