@@ -1,109 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigeria Cultures</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="nigeria.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nigeria Cultures</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+ 
+        header {
+            background-color: #003f5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+ 
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+ 
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+ 
+        nav ul li {
+            display: inline;
+        }
+ 
+        nav a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+ 
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #003f5c;
+            border-radius: 5px;
+        }
+ 
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+ 
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #ffcc00;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            color: #003f5c;
+        }
+ 
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+ 
+        p {
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+ 
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+ 
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+ 
+        footer {
+            background-color: #003f5c;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+ 
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Nigeria Cultures</h1>
-        <nav>
-            <ul>
-                <li><a href="#nigeria-major-ethnic-groups">Nigeria Major Ethnic Groups</a></li>
-                <li><a href="#nigeria-food">Nigeria Foods</a></li>
-                <li><a href="#nigeria-culture">Nigeria Dressings</a></li>
-                <li><a href="#nigeria-greetings">Nigeria Greetings</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="nigeria-major-ethnic-groups">
-            <h2>Nigeria Major Ethnic Groups</h2>
-            <h3>Brief History</h3>
-            <p>Nigeria has a rich history with a diverse cultural landscape. The major tribes include the Hausa, Yoruba, and Igbo, each with its unique traditions and history.</p>
-            
-            <h3>Hausa</h3>
-            <p>The Hausa people are the largest tribe in Nigeria, making up approximately 25% of the population. They are predominantly found in northern Nigeria.</p>
-            <div class="image-grid">
-                <img src="hausa 1.jpeg" alt="Hausa People 1">
-                <img src="hausa 2.webp" alt="Hausa People 2">
-                <img src="hausa 3.jpg" alt="Hausa People 3">
-                <img src="hausa 4.jpg" alt="Hausa People 4">
-                <img src="hausa 6.jpg" alt="Hausa People 6">
-                <img src="hausa 7.jpg" alt="Hausa People 7">
-            </div>
-
-            <h3>Yoruba</h3>
-            <p>The Yoruba people are the second largest tribe in Nigeria, known for their rich culture and traditions in the southwestern regions.</p>
-            <div class="image-grid">
-                <img src="Yoruba-people.jpg" alt="Yoruba People 1">
-                <img src="Yoruba-People 2.webp" alt="Yoruba People 2">
-                <img src="yoruba 3.avif" alt="Yoruba People 3">
-                <img src="yoruba 4.jpg" alt="Yoruba People 4">
-                <img src="yoruba 5.webp" alt="Yoruba People 5">
-                <img src="yoruba 6.jpg" alt="Yoruba People 6">
-            </div>
-
-            <h3>Igbo</h3>
-            <p>The Igbo people are known for their distinct cultural practices and are primarily located in southeastern Nigeria.</p>
-            <div class="image-grid">
-                <img src="Igbo-culture-and-tradition.webp" alt="Igbo Culture 1">
-                <img src="igbo 2.jpg" alt="Igbo Culture 2">
-                <img src="igbo 3.jpg" alt="Igbo Culture 3">
-                <img src="igbo 4.png" alt="Igbo Culture 4">
-                <img src="igbo 6.webp" alt="Igbo Culture 6">
-                <img src="igbo 7.jpg" alt="Igbo Culture 7">
-            </div>
-        </section>
-
+<header>
+<h1>Nigeria Cultures</h1>
+<nav>
+<ul>
+<li><a href="#nigeria-major-ethnic-groups">Major Ethnic Groups</a></li>
+<li><a href="#nigeria-food">Foods</a></li>
+<li><a href="#nigeria-culture">Dressings</a></li>
+<li><a href="#nigeria-greetings">Greetings</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="nigeria-major-ethnic-groups">
+<h2>Nigeria Major Ethnic Groups</h2>
+<h3>Brief History</h3>
+<p>Nigeria has a rich history with a diverse cultural landscape. The major tribes include the Hausa, Yoruba, and Igbo, each with its unique traditions and history.</p>
+<h3>Hausa</h3>
+<p>The Hausa people are the largest tribe in Nigeria, making up approximately 25% of the population. They are predominantly found in northern Nigeria.</p>
+<div class="image-grid">
+<img src="hausa 1.jpeg" alt="Hausa People 1">
+<img src="hausa 2.webp" alt="Hausa People 2">
+<img src="hausa 3.jpg" alt="Hausa People 3">
+<img src="hausa 4.jpg" alt="Hausa People 4">
+</div>
+<h3>Yoruba</h3>
+<p>The Yoruba people are the second largest tribe in Nigeria, known for their rich culture and traditions in the southwestern regions.</p>
+<div class="image-grid">
+<img src="yoruba 5.webp" alt="Yoruba People 1">
+<img src="yoruba 6.jpg" alt="Yoruba People 2">
+<img src="yoruba 3.avif" alt="Yoruba People 3">
+<img src="yoruba 4.jpg" alt="Yoruba People 4">
+</div>
+<h3>Igbo</h3>
+<p>The Igbo people are known for their distinct cultural practices and are primarily located in southeastern Nigeria.</p>
+<div class="image-grid">
+<img src="Igbo-culture-and-tradition.webp" alt="Igbo Culture 1">
+<img src="igbo 2.jpg" alt="Igbo Culture 2">
+<img src="igbo 3.jpg" alt="Igbo Culture 3">
+<img src="igbo 4.png" alt="Igbo Culture 4">
+</div>
+</section>
+ 
         <section id="nigeria-food">
-            <h2>Nigeria Foods</h2>
-            <h3>Tomato Stew</h3>
-            <p>A staple in Nigerian cuisine, this tomato stew is versatile and commonly served with various dishes.</p>
-            <div class="image-grid">
-                <img src="Nigerian-Stew 1.jpg" alt="Tomato Stew 1">
-                <img src="Nigerian-Beef-Stew.jpg" alt="Tomato Stew 2">
-                <!--<img src="beefstew.webp" alt="Tomato Stew 3">-->
-            </div>
-
+<h2>Nigeria Foods</h2>
+<h3>Tomato Stew</h3>
+<p>A staple in Nigerian cuisine, this tomato stew is versatile and commonly served with various dishes.</p>
+<div class="image-grid">
+<img src="Nigerian-Stew 1.jpg" alt="Tomato Stew 1">
+<img src="Nigerian-Beef-Stew.jpg" alt="Tomato Stew 2">
+</div>
+ 
             <h3>Jollof Rice</h3>
-            <p>Jollof rice is a popular Nigerian dish known for its rich tomato flavor and vibrant color.</p>
-            <div class="image-grid">
-                <img src="Jollof-Rice-04.webp" alt="Jollof Rice 1">
-                <img src="Jollof-Rice-With-Chicken-500x375.jpg" alt="Jollof Rice 2">
-                <img src="Jollof_Rice_with_Stew.jpg" alt="Jollof Rice 3">
-            </div>
-
-            <h3>Okro Soup</h3>
-            <p>Okro soup is a versatile dish enjoyed across Nigeria, prepared with either fresh or dehydrated okro.</p>
-            <div class="image-grid">
-                <img src="okro.jpg" alt="Okro Soup 1">
-                <img src="okro 1.jpg" alt="Okro Soup 2">
-                <img src="okro 2.webp" alt="Okro Soup 3">
-            </div>
-
-            <h3>Egusi Soup</h3>
-            <p>Egusi soup is made from ground melon seeds and is widely enjoyed throughout Nigeria.</p>
-            <div class="image-grid">
-                <img src="egusi_soup-1.webp" alt="Egusi Soup 1">
-                <img src="Egusi-Soup-Nigerian-Egusi-Soup-500x500.jpg" alt="Egusi Soup 2">
-                <img src="Egusi-Soup_Website-Grid-1080x1080-1.webp" alt="Egusi Soup 3">
-            </div>
-
-            <h3>Beans Porridge</h3>
-            <p>Beans porridge is a nutritious and common dish in Nigeria, often served with various sides.</p>
-            <div class="image-grid">
-                <img src="beans.jpg" alt="Beans Porridge 1">
-                <img src="beans-porridge1.jpg" alt="Beans Porridge 2">
-                <img src="COOK-BEANS-WITH-PLANTAIN.jpg" alt="Beans Porridge 3">
-            </div>
-        </section>
-
+<p>Jollof rice is a popular Nigerian dish known for its rich tomato flavor and vibrant color.</p>
+<div class="image-grid">
+<img src="Jollof_Rice_with_Stew.jpg" alt="Jollof Rice 1">
+<img src="Jollof-Rice-04.webp" alt="Jollof Rice 2">
+</div>
+</section>
+ 
         <section id="nigeria-greetings">
-            <h2>Nigeria Greetings</h2>
+<h2>Nigeria Greetings</h2>
             <p>1. Bawo ni: This is the standard way of greeting in Yoruba. It means 'How are you' and can be used informally and formally at any time of the day.</p>
             <p>2. Kedu: This is how to say hello in Igbo, meaning 'How are you'. It can be used any time of the day.</p>
             <p>3. Saanu: This is a formal way to say hello in Hausa, commonly used in northern Nigeria.</p>
@@ -114,10 +185,10 @@
             <p>8. Mavo: Means 'How are you?' in Urhobo spoken in Delta state.</p>
             <p>9. Abole: Translated as 'How are you?' or 'Hello' by the Idoma people in Benue state.</p>
             <p>10. Ushé-ushé: A general greeting in Kanuri language spoken in the former Kanem and Bornu empires.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Nigeria Cultures by Dammy INC. All rights reserved.</p>
-    </footer>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 Nigeria Cultures by Dammy INC. All rights reserved.</p>
+</footer>
 </body>
 </html>
